@@ -50,9 +50,9 @@ with open("README.rst") as fh:
     )
 
 setup(
-    name="zeep",
+    name="netas-zeep",
     version="4.0.0",
-    description="A modern/fast Python SOAP client based on lxml / requests",
+    description="A modern/fast Python SOAP client based on lxml / requests, netas version",
     long_description=long_description,
     author="Michael van Tellingen",
     author_email="michaelvantellingen@gmail.com",

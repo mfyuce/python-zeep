@@ -50,7 +50,7 @@ jobs:
           PLATFORM: ${{ matrix.platform }}
     - name: Prepare artifacts
       run: mkdir .coverage-data && mv .coverage.* .coverage-data/
-    - uses: actions/upload-artifact@master
+    - uses: actions/upload-artifact@netas_latest
       with:
         name: coverage-data
         path: .coverage-data/
@@ -60,7 +60,7 @@ jobs:
     needs: [test]
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/download-artifact@master
+    - uses: actions/download-artifact@netas_latest
       with:
         name: coverage-data
         path: .
